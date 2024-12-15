@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Мета-дані для кодування символів та адаптивності на різних пристроях -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Підключення стилів для сторінки -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Заголовок сторінки -->
+    <title>Lavrik</title>
+</head>
+
+<body>
+    <!-- Шапка сайту -->
+    <header class="header">
+        <!-- Логотип, який є посиланням на головну сторінку -->
+        <a href="#" class="header__logo-link">
+            <img src="./images/logo.PNG" alt="LOGO" class="header__logo">
+        </a>
+        <!-- Навігація шапки -->
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <!-- Пункт меню: додавання чогось -->
+                <li class="header__nav-item">
+                    <img src="./icon/plus.PNG" alt="ADD" class="header__nav-icon">
+                </li>
+                <!-- Пункт меню: меню навігації -->
+                <li class="header__nav-item">
+                    <img src="./icon/menu.PNG" alt="MENU" class="header__nav-icon">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <!-- Бокова панель сайту -->
+        <aside class="sidebar">
+            <nav class="sidebar__menu">
+                <div class="sidebar__container">
+                    <!-- Перший набір пунктів меню -->
+                    <ul class="sidebar__menu-list">
+                        <li class="sidebar__menu-item">
+                            <img src="./icon/domic.png" alt="" class="sidebar__menu-icon">
+                            <span class="sidebar__menu-text">Головна сторінка</span>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <img src="./icon/calendar.png" alt="" class="sidebar__menu-icon">
+                            <span class="sidebar__menu-text">Календар</span>
+                        </li>
+                    </ul>
+                    <!-- Другий набір пунктів меню -->
+                    <ul class="sidebar__menu-list">
+                        <li class="sidebar__menu-item">
+                            <img src="./icon/student.png" alt="" class="sidebar__menu-icon">
+                            <span class="sidebar__menu-text">Курси ,дисципліни</span>
+                        </li>
+                        <li class="sidebar__menu-item">
+                            <img src="./icon/list.png" alt="" class="sidebar__menu-icon">
+                            <span class="sidebar__menu-text">Список завдань</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Третій набір пунктів меню -->
+                <ul class="sidebar__menu-list">
+                    <li class="sidebar__menu-item">
+                        <img src="./icon/arhiv.png" alt="" class="sidebar__menu-icon">
+                        <span class="sidebar__menu-text">Архів курсів</span>
+                    </li>
+                    <li class="sidebar__menu-item">
+                        <img src="./icon/sistirenka.png" alt="" class="sidebar__menu-icon">
+                        <span class="sidebar__menu-text">Налаштування</span>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- Основний контент сторінки -->
+        <main class="main">
+            <ul class="main__list">
+                <!-- Пункти основного списку курсів -->
+                <li class="main__item">
+                    <div class="main__item-header">
+                        <!-- Назва курсу з посиланням -->
+                        <a href="#" class="main__link">Метематика</a>
+                    </div>
+                    <div class="main__item-actions">
+                        <!-- Іконки для дії, наприклад, для користувача та файлів -->
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/user.png" alt="" class="main__item-action-icon">
+                        </a>
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/file.png" alt="" class="main__item-action-icon">
+                        </a>
+                    </div>
+                </li>
+                <!-- Повторювані пункти для інших курсів -->
+                <li class="main__item">
+                    <div class="main__item-header">
+                        <a href="#" class="main__link">Бази даних</a>
+                    </div>
+                    <div class="main__item-actions">
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/user.png" alt="" class="main__item-action-icon">
+                        </a>
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/file.png" alt="" class="main__item-action-icon">
+                        </a>
+                    </div>
+                </li>
+                <li class="main__item">
+                    <div class="main__item-header">
+                        <a href="#" class="main__link">Конструювання програмного забезпечення</a>
+                    </div>
+                    <div class="main__item-actions">
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/user.png" alt="" class="main__item-action-icon">
+                        </a>
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/file.png" alt="" class="main__item-action-icon">
+                        </a>
+                    </div>
+                </li>
+                <li class="main__item">
+                    <div class="main__item-header">
+                        <a href="#" class="main__link">Алгоритми і структури даних</a>
+                    </div>
+                    <div class="main__item-actions">
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/user.png" alt="" class="main__item-action-icon">
+                        </a>
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/file.png" alt="" class="main__item-action-icon">
+                        </a>
+                    </div>
+                </li>
+                <li class="main__item">
+                    <div class="main__item-header">
+                        <a href="#" class="main__link">Компютерна графіка</a>
+                    </div>
+                    <div class="main__item-actions">
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/user.png" alt="" class="main__item-action-icon">
+                        </a>
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/file.png" alt="" class="main__item-action-icon">
+                        </a>
+                    </div>
+                </li>
+                <li class="main__item">
+                    <div class="main__item-header">
+                        <a href="#" class="main__link">Фізичне виховання</a>
+                    </div>
+                    <div class="main__item-actions">
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/user.png" alt="" class="main__item-action-icon">
+                        </a>
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/file.png" alt="" class="main__item-action-icon">
+                        </a>
+                    </div>
+                </li>
+                <li class="main__item">
+                    <div class="main__item-header">
+                        <a href="#" class="main__link">Українська мова</a>
+                    </div>
+                    <div class="main__item-actions">
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/user.png" alt="" class="main__item-action-icon">
+                        </a>
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/file.png" alt="" class="main__item-action-icon">
+                        </a>
+                    </div>
+                </li>
+                <li class="main__item">
+                    <div class="main__item-header">
+                        <a href="#" class="main__link">Англійська мова</a>
+                    </div>
+                    <div class="main__item-actions">
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/user.png" alt="" class="main__item-action-icon">
+                        </a>
+                        <a href="#" class="main__item-action-link">
+                            <img src="./icon/file.png" alt="" class="main__item-action-icon">
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <!-- Футер сайту -->
+    <footer class="footer">
+        <!-- Логотип, який є посиланням на головну сторінку -->
+        <a href="#" class="footer__logo-link">
+            <img src="./images/logo.PNG" alt="LOGO" class="footer__logo">
+        </a>
+        <!-- Навігація шапки -->
+        <dvi class="footer__nav">
+            <ul class="footer__nav-list">
+                <!-- Пункт меню: додавання чогось -->
+                <li class="footer__nav-item">
+                    <img src="./icon/plus.PNG" alt="ADD" class="footer__nav-icon">
+                </li>
+                <!-- Пункт меню: меню навігації -->
+                <li class="footer__nav-item">
+                    <img src="./icon/menu.PNG" alt="MENU" class="footer__nav-icon">
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

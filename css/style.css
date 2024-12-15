@@ -1,0 +1,148 @@
+/* Загальні стилі */
+* {
+    text-decoration: none; /* Вимикає підкреслення тексту */
+    border: 2px dashed black;
+    list-style: none; /* Вимикає маркери списків */
+    color: inherit; /* Спадковий колір тексту */
+    margin: 0; /* Встановлюємо нульові відступи */
+    padding: 0; /* Встановлюємо нульові відступи */
+}
+
+/* Основні розміри для тіла сторінки */
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    width: 1000px; /* Ширина сторінки */
+    height: 1200px;
+}
+
+/* Стилі для шапки та футера */
+.header, .footer {
+    height: 100px; /* Висота шапки та футера */
+    display: flex;
+    align-items: center; /* Центруємо вміст по вертикалі */
+    justify-content: space-between; /* Логотип і навігація по краях */
+}
+
+/* Лінки для логотипу в шапці та футері */
+.header__logo-link, .footer__logo-link {
+    display: flex;
+    align-items: center; /* Центруємо логотип по вертикалі */
+    margin-left: 20px; /* Відступ від краю */
+}
+.header__logo, .footer__logo {
+    width: 60px;
+}
+
+.header__nav, .footer__nav {
+    position: relative;
+    width: 850px;
+    height: 60px;
+    align-items: center; /* Центруємо елементи навігації по вертикалі */
+    margin-right: 20px; /* Відступ від краю */
+}
+
+/* Список навігації */
+.header__nav-list, .footer__nav-list {
+    position:absolute;
+    top:10px;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+/* Відступи для елементів списку навігації */
+.header__nav-item, .footer__nav-item {
+    margin: 0 10px; /* Відступ між пунктами меню */
+}
+
+/* Розмір іконок у шапці та футері */
+.header__nav-icon, .footer__nav-icon {
+    width: 20px;
+}
+
+/* Контент */
+.content {
+    display: flex;
+    height: 1000px;
+}
+
+/* Бокова панель */
+.sidebar {
+    width: 300px; /* Ширина бокової панелі */
+    height: 100%; /* Займає повну висоту контенту */
+}
+
+/* Меню бокової панелі */
+.sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Список елементів меню */
+.sidebar__menu-list {
+    padding: 20px;
+}
+
+/* Елементи меню */
+.sidebar__menu-item {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Розмір іконок у боковій панелі */
+.sidebar__menu-icon {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* Основний контент */
+.main {
+    width: 700px;
+    height: 1000px;
+    margin-left: 20px;
+}
+
+/* Список основного контенту */
+.main__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Простір між елементами */
+}
+
+/* Елементи списку */
+.main__item {
+    width: 250px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #000; /* Коробка для прикладу */
+}
+
+/* Заголовок елемента */
+.main__item-header {
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    text-align: center;
+}
+
+/* Дії елемента */
+.main__item-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+/* Іконки дій */
+.main__item-action-icon {
+    width: 20px;
+    margin-left: 10px;
+}
