@@ -1,7 +1,6 @@
 /* Загальні стилі */
 * {
     text-decoration: none; /* Вимикає підкреслення тексту */
-    border: 2px dashed black;
     list-style: none; /* Вимикає маркери списків */
     color: inherit; /* Спадковий колір тексту */
     margin: 0; /* Встановлюємо нульові відступи */
@@ -17,6 +16,11 @@ html {
 body {
     width: 1000px; /* Ширина сторінки */
     height: 1200px;
+}
+
+@font-face {
+    font-family: beer_money;
+    src: url("../font/beer\ money.ttf");
 }
 
 /* Стилі для шапки та футера */
@@ -48,7 +52,7 @@ body {
 /* Список навігації */
 .header__nav-list, .footer__nav-list {
     position:absolute;
-    top:10px;
+    top:20px;
     right: 0;
     display: flex;
     align-items: center;
@@ -68,10 +72,14 @@ body {
 .content {
     display: flex;
     height: 1000px;
+    width: 1000px;
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
 }
 
 /* Бокова панель */
 .sidebar {
+    font-family: "Roboto";
     width: 300px; /* Ширина бокової панелі */
     height: 100%; /* Займає повну висоту контенту */
 }
@@ -83,10 +91,16 @@ body {
     justify-content: space-between;
     height: 100%;
 }
+.sidebar__container .sidebar__menu-list {
+    padding: 20px;
+    border:none;
+    border-bottom: solid black 2px;
+}
 
 /* Список елементів меню */
 .sidebar__menu-list {
     padding: 20px;
+    border-top: solid black 2px;
 }
 
 /* Елементи меню */
@@ -94,6 +108,7 @@ body {
     display: flex;
     align-items: center;
     margin-top: 10px;
+    
 }
 
 /* Розмір іконок у боковій панелі */
@@ -104,9 +119,11 @@ body {
 
 /* Основний контент */
 .main {
+    font-family: beer_money;
     width: 700px;
-    height: 1000px;
-    margin-left: 20px;
+    height: 960px;
+    padding: 20px;
+    border-left: solid black 2px ;
 }
 
 /* Список основного контенту */
@@ -124,6 +141,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     border: 1px solid #000; /* Коробка для прикладу */
+    border-radius: 15px;
 }
 
 /* Заголовок елемента */
@@ -131,7 +149,8 @@ body {
     padding: 10px;
     background-color: blue;
     color: white;
-    text-align: center;
+    border-radius: 15px 15px 0px 0px;
+
 }
 
 /* Дії елемента */
