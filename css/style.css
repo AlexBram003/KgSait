@@ -82,6 +82,7 @@ body {
     font-family: "Roboto";
     width: 300px; /* Ширина бокової панелі */
     height: 100%; /* Займає повну висоту контенту */
+    border-right: solid black 2px ;
 }
 
 /* Меню бокової панелі */
@@ -123,7 +124,6 @@ body {
     width: 700px;
     height: 960px;
     padding: 20px;
-    border-left: solid black 2px ;
 }
 
 /* Список основного контенту */

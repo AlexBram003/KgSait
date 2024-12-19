@@ -4,33 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Авторизація</title>
+    <link rel="stylesheet" href="./css/form.css">
 </head>
 <body>
-    <header>
-        <h1>Шановний відвідувачу!</h1>
-        <p>Для роботи у персональному кабінеті потрібно увійти до нього, використовуючи Ваш обліковий запис.</p>
+    <header class="header">
+        <h1 class="header__title">Шановний відвідувачу!</h1>
+        <p class="header__description">Для роботи у персональному кабінеті потрібно увійти до нього, використовуючи Ваш обліковий запис.</p>
     </header>
-    <section>
-        <form action="#" method="post">
-            <section>
-                <label for="login">Логін:</label>
-                <input type="text" name="login" placeholder="Введіть ваш логін" required autofocus>
+    <section class="main-section">
+        <form action="#" method="post" class="form">
+            <section class="form__group">
+                <label for="login" class="form__label">Логін:</label>
+                <input type="text" name="login" placeholder="Введіть ваш логін" required autofocus class="form__input placeholder">
             </section>
-            <section>
-                <label for="password">Пароль:</label>
-                <input type="password" name="password" placeholder="Введіть ваш пароль" required>
+            <section class="form__group">
+                <label for="password" class="form__label">Пароль:</label>
+                <input type="password" name="password" placeholder="Введіть ваш пароль" required class="form__input placeholder">
             </section>
-            <section>
-                <label>
-                    <input type="checkbox" name="remember"> Запам'ятати мене
+            <section class="form__group">
+                <label class="form__checkbox-label">
+                    <input type="checkbox" name="remember" class="form__checkbox" checked> Запам'ятати мене
                 </label>
             </section>
-            <section>
-                <button type="submit">Увійти</button>
-                <button type="reset">Відмінити</button>
+            <section class="form__group form__buttons">
+                <button type="submit" class="button button--submit">
+                    <a href="./index.html">Увійти</a>
+                </button>
+                <button type="reset" class="button button--reset">Відмінити</button>
             </section>
-            <section>
-                <p><a href="#">Забули логін або пароль?</a></p>
+            <section class="form__group">
+                <p class="form__help"><a href="#" class="form__link">Забули логін або пароль?</a></p>
             </section>
         </form>
     </section>
