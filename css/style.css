@@ -7,15 +7,14 @@
     padding: 0; /* Встановлюємо нульові відступи */
 }
 
-/* Основні розміри для тіла сторінки */
-html {
-    display: flex;
-    justify-content: center;
+html{
+    height: 100%;
+    font-size: 20px;
 }
 
 body {
-    width: 1000px; /* Ширина сторінки */
-    height: 1200px;
+    min-height: 100vh;
+    height: 100%;
 }
 
 @font-face {
@@ -25,7 +24,7 @@ body {
 
 /* Стилі для шапки та футера */
 .header, .footer {
-    height: 100px; /* Висота шапки та футера */
+    height: 10vh;
     display: flex;
     align-items: center; /* Центруємо вміст по вертикалі */
     justify-content: space-between; /* Логотип і навігація по краях */
@@ -43,7 +42,6 @@ body {
 
 .header__nav, .footer__nav {
     position: relative;
-    width: 850px;
     height: 60px;
     align-items: center; /* Центруємо елементи навігації по вертикалі */
     margin-right: 20px; /* Відступ від краю */
@@ -65,24 +63,29 @@ body {
 
 /* Розмір іконок у шапці та футері */
 .header__nav-icon, .footer__nav-icon {
-    width: 20px;
+    width: 30px;
 }
 
 /* Контент */
 .content {
-    display: flex;
-    height: 1000px;
-    width: 1000px;
+    display: flex; /* Головний контейнер flex */
     border-top: solid black 2px;
     border-bottom: solid black 2px;
+    min-height: 80vh; /* Мінімальна висота для структури */
+    width: 100%; /* Займає всю ширину */
+    box-sizing: border-box;
 }
 
 /* Бокова панель */
 .sidebar {
     font-family: "Roboto";
-    width: 300px; /* Ширина бокової панелі */
-    height: 100%; /* Займає повну висоту контенту */
-    border-right: solid black 2px ;
+    width: 250px; /* Фіксована ширина */
+    height: auto; /* Висота автоматично підлаштовується під вміст */
+    border-right: solid black 2px;
+    flex-shrink: 0; /* Запобігає стисненню */
+    display: flex; /* Для правильного вирівнювання вмісту */
+    flex-direction: column; /* Вертикальне вирівнювання елементів */
+    justify-content: space-between; /* Розподіл елементів у боковій панелі */
 }
 
 /* Меню бокової панелі */
@@ -98,6 +101,10 @@ body {
     border-bottom: solid black 2px;
 }
 
+.sidebar__container{
+    display: flex;
+    flex-direction: column;
+}
 /* Список елементів меню */
 .sidebar__menu-list {
     padding: 20px;
@@ -119,36 +126,44 @@ body {
 }
 
 /* Основний контент */
+/* Основной контент */
 .main {
     font-family: beer_money;
-    width: 700px;
-    height: 960px;
+    flex-grow: 1; /* Займає весь доступний простір */
     padding: 20px;
+    box-sizing: border-box; /* Включення відступів у ширину */
+    display: flex;
+    flex-direction: column; /* Елементи всередині в колонку */
 }
 
-/* Список основного контенту */
+/* Список основного контента */
 .main__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Простір між елементами */
+    align-items: flex-start; /* Элементы начинают выравниваться сверху */
+    gap: 20px; /* Расстояние между элементами вместо margin */
 }
 
-/* Елементи списку */
+/* Элементы списка */
 .main__item {
-    width: 250px;
+    width: 25%;
+    max-width: 30vh;
+    min-width: 20vh;
     height: 180px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 1px solid #000; /* Коробка для прикладу */
+    border: 1px solid #000; /* Коробка для примера */
     border-radius: 15px;
 }
+
 
 /* Заголовок елемента */
 .main__item-header {
     padding: 10px;
     background-color: blue;
     color: white;
+    font-size: 1rem;
     border-radius: 15px 15px 0px 0px;
 
 }
@@ -164,4 +179,19 @@ body {
 .main__item-action-icon {
     width: 20px;
     margin-left: 10px;
+}
+
+.show-sidebar-btn {
+    display: none; /* Прихована за замовчуванням */
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 20px;
+}
+.header__MENU, .footer__MENU{
+    display: none;
 }
